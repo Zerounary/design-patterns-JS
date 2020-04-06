@@ -3,7 +3,7 @@
  * 除了意识以外，时空关系也是一个链式的关系，能模拟吗？
  */
 
- /**
+/**
   * 传入初始值和流程，可以按照给的流程进行链式的处理
   * 如果有一套流程，使用者可能会动态的调整顺序，这样写就会很方便
   * @param {*} paramater 
@@ -19,12 +19,12 @@
  }
 
  lineFlow = (paramater) => {
-  paramater.push('线稿');
+  paramater.push('葫芦娃线条');
   return paramater;
  }
 
  colorFlow = (paramater) => {
-  paramater.push('颜色');
+  paramater.push('大娃红');
   return paramater;
  }
 
@@ -37,6 +37,6 @@
   * 如果有一套流程，使用者可能会动态的调整顺序，这样写就会很方便
   */
 
- let rst = DynamicFlow(['白纸'], ['lineFlow', 'colorFlow']); 
- console.log('result', rst);
+ let painting = DynamicFlow(['白纸'], ['lineFlow', 'colorFlow']); 
+ console.log('painting', painting);
  
