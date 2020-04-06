@@ -2,6 +2,7 @@
 
 **[Behavioral](#behavioral)**
 * [Chain Of Resp](#chain-of-resp)
+* [Dynamic Flow](#dynamic-flow)
 * [Command](#command)
 * [Interpreter](#interpreter)
 * [Iterator](#iterator)
@@ -176,6 +177,46 @@ function NoneDiscount() {
 
 module.exports = [ShoppingCart, Discount];
 
+```
+### Dynamic Flow
+##### DynamicFlow.js
+```Javascript
+/**
+  * 传入初始值和流程，可以按照给的流程进行链式的处理
+  * 如果有一套流程，使用者可能会动态的调整顺序，这样写就会很方便
+  * @param {*} paramater 
+  * @param {Array} flow 
+  */
+ function DynamicFlow(paramater, flow){
+  let result = paramater;
+  flow.forEach((flowKey) => {
+    let execFunction = flowLib[flowKey];
+    result = execFunction(result);
+  })
+  return result;
+ }
+
+ lineFlow = (paramater) => {
+  paramater.push('线稿');
+  return paramater;
+ }
+
+ colorFlow = (paramater) => {
+  paramater.push('颜色');
+  return paramater;
+ }
+
+ let flowLib = {
+  lineFlow,
+  colorFlow
+}
+ 
+ /***
+  * 如果有一套流程，使用者可能会动态的调整顺序，这样写就会很方便
+  */
+
+ let rst = DynamicFlow(['白纸'], ['lineFlow', 'colorFlow']); 
+ console.log('result', rst);
 ```
 
 ### Command
