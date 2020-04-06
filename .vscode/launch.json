@@ -17,6 +17,15 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "chain try expend",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/behavioral/chain-of-resp/try/expend.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "abstract-factory try deal",
             "skipFiles": [
                 "<node_internals>/**"
