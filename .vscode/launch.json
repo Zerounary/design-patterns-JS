@@ -5,6 +5,8 @@
     "version": "0.2.0",
     "configurations": [
 
+
+
         {
             "type": "node",
             "request": "launch",
@@ -40,6 +42,24 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/src/creational/abstract-factory/try/origin.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "command try origin",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/behavioral/command/try/origin.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "command try deal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/behavioral/command/try/deal.js"
         }
     ]
 }
