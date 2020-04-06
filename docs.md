@@ -197,12 +197,12 @@ module.exports = [ShoppingCart, Discount];
  }
 
  lineFlow = (paramater) => {
-  paramater.push('线稿');
+  paramater.push('葫芦娃线条');
   return paramater;
  }
 
  colorFlow = (paramater) => {
-  paramater.push('颜色');
+  paramater.push('大娃红');
   return paramater;
  }
 
@@ -215,8 +215,8 @@ module.exports = [ShoppingCart, Discount];
   * 如果有一套流程，使用者可能会动态的调整顺序，这样写就会很方便
   */
 
- let rst = DynamicFlow(['白纸'], ['lineFlow', 'colorFlow']); 
- console.log('result', rst);
+ let painting = DynamicFlow(['白纸'], ['lineFlow', 'colorFlow']); 
+ console.log('painting', painting);
 ```
 
 ### Command
