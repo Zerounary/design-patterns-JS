@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "chain try deal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/behavioral/chain-of-resp/try/deal.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "abstract-factory try deal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/creational/abstract-factory/try/deal.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "abstract-factory try origin",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/creational/abstract-factory/try/origin.js"
+        }
+    ]
+}
