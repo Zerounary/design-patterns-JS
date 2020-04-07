@@ -60,6 +60,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/src/behavioral/command/try/deal.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "builder try origin",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/creational/builder/try/origin.js"
         }
     ]
 }
